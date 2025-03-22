@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faruk Web Developer Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation Bar */
+        #navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar ul li {
+            margin: 0 15px;
+        }
+
+        #navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #navbar ul li a:hover {
+            color: #f4f4f4;
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        #about {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        #about h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        #projects h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .project-item h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .project-item p {
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .project-item .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-item .btn:hover {
+            background-color: #555;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        #contact h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact form input, #contact form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact form button:hover {
+            background-color: #555;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .social-links a:hover {
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <img src="profile.jpg" alt="Faruk's Profile Picture" class="profile-img">
+            <h1>Faruk Web Developer</h1>
+            <p>Hi, I'm Faruk, a professional web developer specializing in creating responsive and user-friendly websites. I have experience in HTML, CSS, JavaScript, and various web development frameworks.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <!-- Add more project items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/yourformid" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/faruk" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/faruk" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://facebook.com/faruk" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/faruk" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Faruk Web Developer. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animations on scroll
+        window.addEventListener('scroll', () => {
+            const aboutSection = document.getElementById('about');
+            const projectsSection = document.getElementById('projects');
+            const contactSection = document.getElementById('contact');
+
+            const sections = [aboutSection, projectsSection, contactSection];
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+
+                if (sectionTop < window.innerHeight && sectionBottom > 0) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                } else {
+                    section.style.opacity = '0';
+                    section.style.transform = 'translateY(50px)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
